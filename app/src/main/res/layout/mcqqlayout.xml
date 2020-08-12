@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/option4BTQuiz"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/quiz_button"
+        android:text="Not Very much"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/option3BTQuiz" />
+
+    <Button
+        android:id="@+id/option1BTQuiz"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/quiz_button"
+        android:text="Exactly"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/option2BTQuiz"
+        app:layout_constraintStart_toStartOf="@+id/option2BTQuiz"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/option2BTQuiz"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/quiz_button"
+        android:text="Never"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/option3BTQuiz"
+        app:layout_constraintStart_toStartOf="@+id/option3BTQuiz"
+        app:layout_constraintTop_toBottomOf="@+id/option1BTQuiz" />
+
+    <Button
+        android:id="@+id/option3BTQuiz"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/quiz_button"
+        android:text="Died"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="@+id/option4BTQuiz"
+        app:layout_constraintStart_toStartOf="@+id/option4BTQuiz"
+        app:layout_constraintTop_toBottomOf="@+id/option2BTQuiz" />
+</androidx.constraintlayout.widget.ConstraintLayout>

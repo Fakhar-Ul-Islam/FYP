@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3B3E46"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="NEW"
+        android:textColor="#FF9F1C"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="ACCOUNT"
+        android:textColor="#ffffff"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/addProfileImgCivRegister"
+        android:layout_width="150dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="8dp"
+        app:civ_border_color="#FF9F1C"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="#3f51b5"
+        app:civ_shadow_radius="10"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Upload a profle picture"
+        android:textColor="#FF9F1C"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/addProfileImgCivRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addProfileImgCivRegister"
+        app:layout_constraintTop_toTopOf="@+id/addProfileImgCivRegister" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#71778B"
+        android:text="{Optional}"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <EditText
+        android:id="@+id/nameEtRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#FF9F1C"
+        android:textColorHint="#71778B"
+        android:textColor="@color/colorWhite"
+        android:ems="10"
+        android:hint="Enter Your Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <EditText
+        android:id="@+id/phoneNumberEtRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColorHint="#71778B"
+        android:textColor="@color/colorWhite"
+        android:hint="Enter Your Phone Number"
+        android:backgroundTint="#FF9F1C"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/nameEtRegister"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nameEtRegister"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Spinner
+        android:id="@+id/qualificationSpinnerRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/postalAddressEtRegister"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/postalAddressEtRegister"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/postalAddressEtRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Your Postal Address"
+        android:backgroundTint="#FF9F1C"
+        android:textColorHint="#71778B"
+        android:textColor="@color/colorWhite"
+        android:inputType="textPersonName|textPostalAddress"
+        app:layout_constraintEnd_toEndOf="@+id/phoneNumberEtRegister"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/phoneNumberEtRegister"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Name"
+
+        android:textColor="#FF9F1C"
+        app:layout_constraintStart_toStartOf="@+id/nameEtRegister"
+        app:layout_constraintTop_toBottomOf="@+id/addProfileImgCivRegister" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Phone Number"
+        android:textColor="#FF9F1C"
+
+        app:layout_constraintStart_toStartOf="@+id/phoneNumberEtRegister"
+        app:layout_constraintTop_toBottomOf="@+id/nameEtRegister" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#FF9F1C"
+
+        android:text="Address"
+        app:layout_constraintStart_toStartOf="@+id/postalAddressEtRegister"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumberEtRegister" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textColor="#FF9F1C"
+
+        android:text="Qualification"
+        app:layout_constraintStart_toStartOf="@+id/qualificationSpinnerRegister"
+        app:layout_constraintTop_toBottomOf="@+id/postalAddressEtRegister" />
+
+    <Button
+        android:id="@+id/signupBtRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_corner_button"
+        android:text="Sign Up"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/qualificationSpinnerRegister"
+        app:layout_constraintStart_toStartOf="@+id/qualificationSpinnerRegister" />
+
+    <TextView
+        android:id="@+id/alreadyAccountTVRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="#FF9F1C"
+
+        android:text="Already have account?"
+        app:layout_constraintBottom_toTopOf="@+id/signupBtRegister"
+        app:layout_constraintEnd_toEndOf="@+id/signupBtRegister"
+        app:layout_constraintStart_toStartOf="@+id/signupBtRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
